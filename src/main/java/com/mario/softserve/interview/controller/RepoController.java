@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("repositories")
 public class RepoController {
 
-    private RepoService repoService;
+    private final RepoService repoService;
 
     public RepoController(RepoService repoService) {
         this.repoService = repoService;
