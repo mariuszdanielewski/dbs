@@ -1,11 +1,9 @@
 package com.mario.softserve.interview.service;
 
-import category.TestCategory;
 import com.mario.softserve.interview.client.GitHubApiClient;
 import com.mario.softserve.interview.controller.RepoDTO;
 import com.mario.softserve.interview.dao.RepoDao;
 import com.mario.softserve.interview.model.Repo;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,7 +18,6 @@ import static org.mockito.Mockito.when;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-@Tag(TestCategory.INTEGRATION_TEST)
 public class RepoServiceIntegrationTest {
 
     @InjectMocks

@@ -1,10 +1,8 @@
 package com.mario.softserve.interview.dao;
 
-import category.TestCategory;
 import com.mario.softserve.interview.MongoDbContainer;
 import com.mario.softserve.interview.model.Repo;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.reactivestreams.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +20,6 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 @AutoConfigureMockMvc
 @ContextConfiguration(initializers = RepoDaoIntegrationTest.MongoDbInitializer.class)
-@Tag(TestCategory.INTEGRATION_TEST)
 public class RepoDaoIntegrationTest {
 
     private static MongoDbContainer mongoDbContainer;

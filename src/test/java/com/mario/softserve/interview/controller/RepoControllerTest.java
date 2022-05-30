@@ -1,8 +1,6 @@
 package com.mario.softserve.interview.controller;
 
-import category.TestCategory;
 import com.mario.softserve.interview.service.RepoService;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,6 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
 @WebFluxTest(RepoController.class)
-@Tag(TestCategory.INTEGRATION_TEST)
 public class RepoControllerTest {
 
     @Autowired
